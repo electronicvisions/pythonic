@@ -1,0 +1,9 @@
+@Library("jenlib") _
+
+wafDefaultPipeline(projects: ["pythonic"],
+                   container: [app: "wafer"],
+                   notificationChannel: "#softies")
+
+wafDefaultPipeline(projects: ["pythonic"],
+                   container: [app: "dls-core"],
+                   notificationChannel: "#dls-software")
